@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.iecas.firstactivity">
-
+    package="cn.iecas.firstactivity" android:versionCode="1" android:versionName="Wangmingzhi" android:installLocation="auto">
+<!--   package 表示整个程序的包名，是创建这个程序的时候填写的信息-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <!--   intent-filter 意图过滤器，用于过滤用户的动作和操作-->
             <intent-filter android:label="HelloAndoid">
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/> <!--android.intent.action.MAIN 表示该Activity是Java程序的入口-->
+                <category android:name="android.intent.category.LAUNCHER"/><!--android.intent.category.LAUNCHER 表示该Activity可以显示在程序列表中-->
             </intent-filter>
         </activity>
     </application>
